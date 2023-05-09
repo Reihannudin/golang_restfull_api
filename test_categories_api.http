@@ -1,0 +1,38 @@
+
+###Get All Categories
+GET http://localhost:3000/api/categories
+X-API-AUTH-Key: 12345678
+Accept: application/json
+
+###FindByID Categories
+GET http://localhost:3000/api/categories/100
+Accept: application/json
+X-API-AUTH-Key: 12345678
+Content-Type: application/json
+
+
+###Create New Categories
+POST http://localhost:3000/api/categories
+Accept: application/json
+X-API-AUTH-Key: 12345678
+Content-Type: application/json
+
+{
+  "name" : ""
+}
+
+###Update Categories
+PUT http://localhost:3000/api/categories/100
+Accept: application/json
+#X-API-AUTH-Key: 12345678
+Content-Type: application/json
+
+{
+  "name" : "Nadia"
+}
+
+###Delete Category from Categories
+DELETE http://localhost:3000/api/categories/1
+Accept: application/json
+#X-API-AUTH-Key: 12345678
+Content-Type: application/json
